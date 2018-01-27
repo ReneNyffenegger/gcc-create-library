@@ -1,0 +1,18 @@
+#
+#  Use LD_DEBUG
+#    set it to libs to display library search paths
+#
+LD_LIBRARY_PATH=$(pwd)/bin LD_DEBUG=libs bin/use-shared-object
+
+#
+#  Setting LD_DEBUG to files to display progress for input files
+#
+LD_LIBRARY_PATH=$(pwd)/bin LD_DEBUG=files bin/use-shared-object
+
+#
+#  Setting LD_DEBUG to reloc to display relocation processing
+#
+LD_LIBRARY_PATH=$(pwd)/bin LD_DEBUG=reloc bin/use-shared-object
+
+LD_LIBRARY_PATH=$(pwd)/bin LD_DEBUG=symbols bin/use-shared-object
+

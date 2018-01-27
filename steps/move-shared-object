@@ -1,0 +1,6 @@
+#
+#   Moving the shared object to a standard location
+#
+sudo mv bin/libtq84.so /usr/lib
+sudo chmod 755 /usr/lib/libtq84.so
+

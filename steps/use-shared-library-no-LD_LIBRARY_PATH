@@ -1,0 +1,6 @@
+#
+#   Since the shared library was copied to a standard
+#   location (/usr/lib), the environment variable LD_LIBRARY_PATH
+#   does not need to be set to execute the executable:
+
+bin/use-shared-library

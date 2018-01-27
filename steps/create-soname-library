@@ -1,0 +1,2 @@
+gcc -shared  bin/tq84-PIC.o -Wl,-soname,libtq84Soname.so.1 -o bin/libtq84Soname.so.1.0.1
+ln -s libtq84Soname.so.1.0.1 bin/libtq84Soname.so

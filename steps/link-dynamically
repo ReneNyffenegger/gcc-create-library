@@ -1,0 +1,7 @@
+# Note the order:
+#   -ltq84 needs to be placed AFTER main.c
+
+gcc -Lbin bin/main.o -ltq84 -o bin/use-shared-library
+
+# Alternatively, use src/main.c instead of bin/main.o:
+#   gcc -Lbin src/main.c -ltq84 -o bin/use-shared-object

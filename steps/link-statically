@@ -1,0 +1,10 @@
+#
+#   Both, the position independent and position dependent object
+#   files can be used to statically link an executable:
+#
+gcc bin/tq84.o     bin/main.o -o bin/statically-linked
+gcc bin/tq84-PIC.o bin/main.o -o bin/statically-linked-PIC
+
+# The files can now be execucted with
+#   bin/statically-linked
+#   bin/statically-linked-PIC

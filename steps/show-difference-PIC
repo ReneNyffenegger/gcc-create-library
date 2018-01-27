@@ -1,0 +1,2 @@
+objdump --disassemble bin/tq84-PIC.o | sed -n '/<add>/,/^$/p'
+objdump --disassemble bin/tq84.o     | sed -n '/<add>/,/^$/p'

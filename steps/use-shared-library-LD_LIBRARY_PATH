@@ -1,0 +1,8 @@
+#  If the shared object is in a non standard location, we
+#  need to tell where it is via the LD_LIBRARY_PATH
+#  environment variable
+#
+# ./use-shared-object
+#    ./use-shared-object: error while loading shared libraries: libtq84.so: cannot open shared object file: No such file or directory
+
+LD_LIBRARY_PATH=$(pwd)/bin bin/use-shared-library

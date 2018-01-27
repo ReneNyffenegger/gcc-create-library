@@ -1,0 +1,4 @@
+*.swp
+use-shared-object
+statically-linked*
+dlopen

@@ -1,0 +1,5 @@
+#
+#  Similar to objdump but more detailed:
+#
+readelf --relocs bin/tq84-PIC.o
+readelf --relocs bin/tq84.o

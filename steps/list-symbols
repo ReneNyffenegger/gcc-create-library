@@ -1,0 +1,9 @@
+#
+#  TODO
+#
+#  List symbols in object files
+#
+nm bin/tq84.0
+nm bin/libtq84Soname.so
+nm bin/statically-linked
+nm bin/statically-linked-PIC

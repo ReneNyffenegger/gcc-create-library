@@ -26,4 +26,6 @@
 
 . steps/readelf-relocs
 
+. steps/list-symbols
+
 . steps/cleanup

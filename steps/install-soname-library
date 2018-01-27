@@ -1,4 +1,4 @@
-sudo cp bin/libtq84Soname.so.1.0.1 /usr/lib
+sudo cp bin/shared/libtq84Soname.so.1.0.1 /usr/lib
 sudo chmod 755 /usr/lib/libtq84Soname.so.1.0.1
 
 sudo ldconfig -v -n /usr/lib

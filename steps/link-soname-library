@@ -1,4 +1,4 @@
-gcc -Lbin  bin/main.o -ltq84Soname -o bin/use-shared-library-soname
+gcc -Lbin/shared  bin/main.o -ltq84Soname -o bin/use-shared-library-soname
 
 # Alterntatively
 # gcc -Lbin  src/main.c -ltq84Soname -o bin/use-shared-library-soname

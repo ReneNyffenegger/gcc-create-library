@@ -5,4 +5,4 @@
 # ./use-shared-object
 #    ./use-shared-object: error while loading shared libraries: libtq84.so: cannot open shared object file: No such file or directory
 
-LD_LIBRARY_PATH=$(pwd)/bin bin/use-shared-library
+LD_LIBRARY_PATH=$(pwd)/bin/shared bin/use-shared-library

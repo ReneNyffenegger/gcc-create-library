@@ -1,8 +1,15 @@
-gcc -c       src/tq84.c -o bin/tq84.o
-gcc -c       src/main.c -o bin/main.o
+
+gcc -c       src/main.c        -o bin/main.o
+
+#
+# Create the object files for the static library (without -fPIC)
+#
+gcc -c       src/tq84/add.c    -o bin/static/add.o
+gcc -c       src/tq84/answer.c -o bin/static/answer.o
 
 #
 # object files for shared libraries need to be compiled as position independent
-# code because they are mapped to any position in the address space.
+# code (-fPIC) because they are mapped to any position in the address space.
 #
-gcc -c -fPIC src/tq84.c -o bin/tq84-PIC.o
+gcc -c -fPIC src/tq84/add.c    -o bin/shared/add.o
+gcc -c -fPIC src/tq84/answer.c -o bin/shared/answer.o

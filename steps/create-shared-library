@@ -1,11 +1,13 @@
+
+# gcc -shared -L bin -l tq84-static -o bin/libtq84-shared.so
+gcc -shared bin/shared/add.o bin/shared/answer.o -o bin/shared/libtq84.so
+
 #
 #  In order to create a shared library, the position independent code
 #  must be used.
 #
-#  The following line
-#     gcc -shared  bin/tq84.o -o bin/libtq84.so
+#  Not using the -PIC.o object files
+#      gcc -shared bin/static/add.o bin/static/answer.o -o bin/shared/libtq84.so
 #  produces this error:
 #     /usr/bin/ld: bin/tq84.o: relocation R_X86_64_PC32 against symbol `gSummand' can not be used when making a shared object; recompile with -fPIC
 #
-
-gcc -shared  bin/tq84-PIC.o -o bin/libtq84.so

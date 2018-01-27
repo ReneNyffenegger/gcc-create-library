@@ -1,1 +1,6 @@
 sudo rm /usr/lib/libtq84*
+rm   bin/*.o
+rm   bin/static/*.o
+rm   bin/shared/*.o
+rm   bin/statically-linked
+rm   bin/use-shared-library

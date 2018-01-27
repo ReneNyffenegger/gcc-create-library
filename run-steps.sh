@@ -2,6 +2,8 @@
 
 . steps/create-object-files
 
+. steps/create-static-library
+
 . steps/link-statically
 
 . steps/create-shared-library
@@ -19,6 +21,8 @@
 . steps/create-soname-library
 
 . steps/link-soname-library
+
+. steps/install-soname-library
 
 . steps/LD_DEBUG
 

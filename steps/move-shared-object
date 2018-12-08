@@ -3,4 +3,3 @@
 #
 sudo mv bin/shared/libtq84.so /usr/lib
 sudo chmod 755 /usr/lib/libtq84.so
-

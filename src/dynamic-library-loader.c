@@ -21,7 +21,10 @@ int main(int argc, char* argv[]) {
 
  //
  // Declare the function pointers:
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wunused-but-set-variable"
     void (*fptr_null      )(int);
+#pragma GCC diagnostic pop
     void (*fptr_setSummand)(int);
     int  (*fptr_add       )(int);
 

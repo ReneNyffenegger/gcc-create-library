@@ -2,3 +2,5 @@
 use-shared-object
 statically-linked*
 dlopen
+build-meson-*
+

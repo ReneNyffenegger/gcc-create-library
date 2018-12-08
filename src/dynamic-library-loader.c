@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include <dlfcn.h>
 
-// Note, tq84.h needs not be included.
-// #include "tq84.h"
+// Note, add.h and answer.h
+// need not be #include'd
 
 
 void* getFunctionPointer(void* lib, const char* funcName) {
@@ -51,14 +51,12 @@ int main(int argc, char* argv[]) {
     fptr_setSummand=getFunctionPointer(tq84_lib, "setSummand");
     fptr_add       =getFunctionPointer(tq84_lib, "add"       );
 
- 
  //
  // Call the function via the function pointer
  //
     fptr_setSummand(42);
-    
+
     int result = fptr_add(7);
 
     printf("Result: %d\n", result);
-
 }
